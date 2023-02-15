@@ -30,3 +30,1436 @@ FOREIGN KEY ("stock_id")
   [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
   [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/signup" for 127.0.0.1 at 2023-02-15 10:33:30 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#create as */*
+  Parameters: {"price"=>250, "vendor_id"=>2, "sweet_id"=>1}
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 3097)
+
+
+  
+SyntaxError (/Users/jamesp/Developer/flatiron-school/phase-4/final-project/she-backend/app/models/user.rb:9: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+    validates :username, presence: true, uni...
+              ^
+/Users/jamesp/Developer/flatiron-school/phase-4/final-project/she-backend/app/models/user.rb:9: Can't assign to true
+...dates :username, presence: true, uniqueness: true, length: {...
+...                           ^~~~
+/Users/jamesp/Developer/flatiron-school/phase-4/final-project/she-backend/app/models/user.rb:9: Can't assign to true
+...resence: true, uniqueness: true, length: { minimum: 3, maxim...
+...                           ^~~~
+/Users/jamesp/Developer/flatiron-school/phase-4/final-project/she-backend/app/models/user.rb:9: syntax error, unexpected ',', expecting `end'
+...h: { minimum: 3, maximum: 15 }, format: { with: /\A[a-zA-Z0-...
+...                              ^
+/Users/jamesp/Developer/flatiron-school/phase-4/final-project/she-backend/app/models/user.rb:18: syntax error, unexpected ',', expecting `end'
+      balance == 10,000
+                   ^
+):
+  
+app/models/user.rb:9: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/models/user.rb:9: Can't assign to true
+app/models/user.rb:9: Can't assign to true
+app/models/user.rb:9: syntax error, unexpected ',', expecting `end'
+app/models/user.rb:18: syntax error, unexpected ',', expecting `end'
+app/models/user.rb:9: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/models/user.rb:9: Can't assign to true
+app/models/user.rb:9: Can't assign to true
+app/models/user.rb:9: syntax error, unexpected ',', expecting `end'
+app/models/user.rb:18: syntax error, unexpected ',', expecting `end'
+app/controllers/users_controller.rb:9:in `create'
+Started POST "/signup" for 127.0.0.1 at 2023-02-15 10:37:49 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"joey", "name"=>"joey123", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 3098)
+
+
+  
+SyntaxError (/Users/jamesp/Developer/flatiron-school/phase-4/final-project/she-backend/app/models/user.rb:9: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+    validates :username, presence: true, uni...
+              ^
+/Users/jamesp/Developer/flatiron-school/phase-4/final-project/she-backend/app/models/user.rb:9: Can't assign to true
+...dates :username, presence: true, uniqueness: true, length: {...
+...                           ^~~~
+/Users/jamesp/Developer/flatiron-school/phase-4/final-project/she-backend/app/models/user.rb:9: Can't assign to true
+...resence: true, uniqueness: true, length: { minimum: 3, maxim...
+...                           ^~~~
+/Users/jamesp/Developer/flatiron-school/phase-4/final-project/she-backend/app/models/user.rb:9: syntax error, unexpected ',', expecting `end'
+...h: { minimum: 3, maximum: 15 }, format: { with: /\A[a-zA-Z0-...
+...                              ^
+/Users/jamesp/Developer/flatiron-school/phase-4/final-project/she-backend/app/models/user.rb:18: syntax error, unexpected ',', expecting `end'
+      balance == 10,000
+                   ^
+):
+  
+app/models/user.rb:9: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/models/user.rb:9: Can't assign to true
+app/models/user.rb:9: Can't assign to true
+app/models/user.rb:9: syntax error, unexpected ',', expecting `end'
+app/models/user.rb:18: syntax error, unexpected ',', expecting `end'
+app/models/user.rb:9: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/models/user.rb:9: Can't assign to true
+app/models/user.rb:9: Can't assign to true
+app/models/user.rb:9: syntax error, unexpected ',', expecting `end'
+app/models/user.rb:18: syntax error, unexpected ',', expecting `end'
+app/controllers/users_controller.rb:9:in `create'
+Started GET "/models/user.rb:9:" for 127.0.0.1 at 2023-02-15 10:37:57 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/models/user.rb:9:"):
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2023-02-15 10:37:57 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/users" for 127.0.0.1 at 2023-02-15 10:38:07 -0500
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for UsersController):
+  
+actionpack (7.0.4.2) lib/abstract_controller/base.rb:146:in `process'
+actionpack (7.0.4.2) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.4.2) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.4.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.4.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.4.2) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.4.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.4.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.4.2) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.6.2) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.6.2) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+rack (2.2.6.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.6.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.6.2) lib/rack/head.rb:12:in `call'
+activerecord (7.0.4.2) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.2) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/users/1" for 127.0.0.1 at 2023-02-15 10:38:12 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 200)
+
+
+  
+SyntaxError (/Users/jamesp/Developer/flatiron-school/phase-4/final-project/she-backend/app/models/user.rb:9: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+    validates :username, presence: true, uni...
+              ^
+/Users/jamesp/Developer/flatiron-school/phase-4/final-project/she-backend/app/models/user.rb:9: Can't assign to true
+...dates :username, presence: true, uniqueness: true, length: {...
+...                           ^~~~
+/Users/jamesp/Developer/flatiron-school/phase-4/final-project/she-backend/app/models/user.rb:9: Can't assign to true
+...resence: true, uniqueness: true, length: { minimum: 3, maxim...
+...                           ^~~~
+/Users/jamesp/Developer/flatiron-school/phase-4/final-project/she-backend/app/models/user.rb:9: syntax error, unexpected ',', expecting `end'
+...h: { minimum: 3, maximum: 15 }, format: { with: /\A[a-zA-Z0-...
+...                              ^
+/Users/jamesp/Developer/flatiron-school/phase-4/final-project/she-backend/app/models/user.rb:18: syntax error, unexpected ',', expecting `end'
+      balance == 10,000
+                   ^
+):
+  
+app/models/user.rb:9: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/models/user.rb:9: Can't assign to true
+app/models/user.rb:9: Can't assign to true
+app/models/user.rb:9: syntax error, unexpected ',', expecting `end'
+app/models/user.rb:18: syntax error, unexpected ',', expecting `end'
+app/models/user.rb:9: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/models/user.rb:9: Can't assign to true
+app/models/user.rb:9: Can't assign to true
+app/models/user.rb:9: syntax error, unexpected ',', expecting `end'
+app/models/user.rb:18: syntax error, unexpected ',', expecting `end'
+app/controllers/application_controller.rb:20:in `current_user'
+app/controllers/users_controller.rb:18:in `show'
+Started GET "/stocks/1" for 127.0.0.1 at 2023-02-15 10:38:18 -0500
+Processing by StocksController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 171)
+
+
+  
+SyntaxError (/Users/jamesp/Developer/flatiron-school/phase-4/final-project/she-backend/app/models/user.rb:9: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+    validates :username, presence: true, uni...
+              ^
+/Users/jamesp/Developer/flatiron-school/phase-4/final-project/she-backend/app/models/user.rb:9: Can't assign to true
+...dates :username, presence: true, uniqueness: true, length: {...
+...                           ^~~~
+/Users/jamesp/Developer/flatiron-school/phase-4/final-project/she-backend/app/models/user.rb:9: Can't assign to true
+...resence: true, uniqueness: true, length: { minimum: 3, maxim...
+...                           ^~~~
+/Users/jamesp/Developer/flatiron-school/phase-4/final-project/she-backend/app/models/user.rb:9: syntax error, unexpected ',', expecting `end'
+...h: { minimum: 3, maximum: 15 }, format: { with: /\A[a-zA-Z0-...
+...                              ^
+/Users/jamesp/Developer/flatiron-school/phase-4/final-project/she-backend/app/models/user.rb:18: syntax error, unexpected ',', expecting `end'
+      balance == 10,000
+                   ^
+):
+  
+app/models/user.rb:9: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/models/user.rb:9: Can't assign to true
+app/models/user.rb:9: Can't assign to true
+app/models/user.rb:9: syntax error, unexpected ',', expecting `end'
+app/models/user.rb:18: syntax error, unexpected ',', expecting `end'
+app/models/user.rb:9: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/models/user.rb:9: Can't assign to true
+app/models/user.rb:9: Can't assign to true
+app/models/user.rb:9: syntax error, unexpected ',', expecting `end'
+app/models/user.rb:18: syntax error, unexpected ',', expecting `end'
+app/controllers/application_controller.rb:20:in `current_user'
+app/controllers/application_controller.rb:24:in `authorize'
+Started POST "/signup" for 127.0.0.1 at 2023-02-15 10:38:57 -0500
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"joey", "name"=>"joey123", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}
+Completed 500 Internal Server Error in 1ms (Allocations: 200)
+
+
+  
+SyntaxError (/Users/jamesp/Developer/flatiron-school/phase-4/final-project/she-backend/app/models/user.rb:9: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+    validates :username, presence: true, uni...
+              ^
+/Users/jamesp/Developer/flatiron-school/phase-4/final-project/she-backend/app/models/user.rb:9: Can't assign to true
+...dates :username, presence: true, uniqueness: true, length: {...
+...                           ^~~~
+/Users/jamesp/Developer/flatiron-school/phase-4/final-project/she-backend/app/models/user.rb:9: Can't assign to true
+...resence: true, uniqueness: true, length: { minimum: 3, maxim...
+...                           ^~~~
+/Users/jamesp/Developer/flatiron-school/phase-4/final-project/she-backend/app/models/user.rb:9: syntax error, unexpected ',', expecting `end'
+...h: { minimum: 3, maximum: 15 }, format: { with: /\A[a-zA-Z0-...
+...                              ^
+/Users/jamesp/Developer/flatiron-school/phase-4/final-project/she-backend/app/models/user.rb:18: syntax error, unexpected ',', expecting `end'
+      balance == 10,000
+                   ^
+):
+  
+app/models/user.rb:9: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/models/user.rb:9: Can't assign to true
+app/models/user.rb:9: Can't assign to true
+app/models/user.rb:9: syntax error, unexpected ',', expecting `end'
+app/models/user.rb:18: syntax error, unexpected ',', expecting `end'
+app/models/user.rb:9: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/models/user.rb:9: Can't assign to true
+app/models/user.rb:9: Can't assign to true
+app/models/user.rb:9: syntax error, unexpected ',', expecting `end'
+app/models/user.rb:18: syntax error, unexpected ',', expecting `end'
+app/controllers/users_controller.rb:9:in `create'
+Started GET "/models/user.rb:9:" for 127.0.0.1 at 2023-02-15 10:39:04 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/models/user.rb:9:"):
+  
+Started GET "/stocks/1" for 127.0.0.1 at 2023-02-15 10:39:43 -0500
+Processing by StocksController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (Allocations: 160)
+
+
+  
+SyntaxError (/Users/jamesp/Developer/flatiron-school/phase-4/final-project/she-backend/app/models/user.rb:10: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+    validates :password_digest, presence: tr...
+              ^
+/Users/jamesp/Developer/flatiron-school/phase-4/final-project/she-backend/app/models/user.rb:10: Can't assign to true
+...password_digest, presence: true, format: { with: /\A[a-zA-Z]...
+...                           ^~~~
+/Users/jamesp/Developer/flatiron-school/phase-4/final-project/she-backend/app/models/user.rb:18: syntax error, unexpected ',', expecting `end'
+      balance == 10,000
+                   ^
+):
+  
+app/models/user.rb:10: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/models/user.rb:10: Can't assign to true
+app/models/user.rb:18: syntax error, unexpected ',', expecting `end'
+app/models/user.rb:10: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/models/user.rb:10: Can't assign to true
+app/models/user.rb:18: syntax error, unexpected ',', expecting `end'
+app/controllers/application_controller.rb:20:in `current_user'
+app/controllers/application_controller.rb:24:in `authorize'
+Started GET "/stocks/1" for 127.0.0.1 at 2023-02-15 10:39:44 -0500
+Processing by StocksController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (Allocations: 146)
+
+
+  
+SyntaxError (/Users/jamesp/Developer/flatiron-school/phase-4/final-project/she-backend/app/models/user.rb:10: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+    validates :password_digest, presence: tr...
+              ^
+/Users/jamesp/Developer/flatiron-school/phase-4/final-project/she-backend/app/models/user.rb:10: Can't assign to true
+...password_digest, presence: true, format: { with: /\A[a-zA-Z]...
+...                           ^~~~
+/Users/jamesp/Developer/flatiron-school/phase-4/final-project/she-backend/app/models/user.rb:18: syntax error, unexpected ',', expecting `end'
+      balance == 10,000
+                   ^
+):
+  
+app/models/user.rb:10: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/models/user.rb:10: Can't assign to true
+app/models/user.rb:18: syntax error, unexpected ',', expecting `end'
+app/models/user.rb:10: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/models/user.rb:10: Can't assign to true
+app/models/user.rb:18: syntax error, unexpected ',', expecting `end'
+app/controllers/application_controller.rb:20:in `current_user'
+app/controllers/application_controller.rb:24:in `authorize'
+Started GET "/stocks/1" for 127.0.0.1 at 2023-02-15 10:39:45 -0500
+Processing by StocksController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (Allocations: 146)
+
+
+  
+SyntaxError (/Users/jamesp/Developer/flatiron-school/phase-4/final-project/she-backend/app/models/user.rb:10: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+    validates :password_digest, presence: tr...
+              ^
+/Users/jamesp/Developer/flatiron-school/phase-4/final-project/she-backend/app/models/user.rb:10: Can't assign to true
+...password_digest, presence: true, format: { with: /\A[a-zA-Z]...
+...                           ^~~~
+/Users/jamesp/Developer/flatiron-school/phase-4/final-project/she-backend/app/models/user.rb:18: syntax error, unexpected ',', expecting `end'
+      balance == 10,000
+                   ^
+):
+  
+app/models/user.rb:10: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/models/user.rb:10: Can't assign to true
+app/models/user.rb:18: syntax error, unexpected ',', expecting `end'
+app/models/user.rb:10: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/models/user.rb:10: Can't assign to true
+app/models/user.rb:18: syntax error, unexpected ',', expecting `end'
+app/controllers/application_controller.rb:20:in `current_user'
+app/controllers/application_controller.rb:24:in `authorize'
+Started GET "/stocks/1" for 127.0.0.1 at 2023-02-15 10:39:50 -0500
+Processing by StocksController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (Allocations: 153)
+
+
+  
+SyntaxError (/Users/jamesp/Developer/flatiron-school/phase-4/final-project/she-backend/app/models/user.rb:11: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+    validates :balance, numericality: { grea...
+              ^
+/Users/jamesp/Developer/flatiron-school/phase-4/final-project/she-backend/app/models/user.rb:18: syntax error, unexpected ',', expecting `end'
+      balance == 10,000
+                   ^
+):
+  
+app/models/user.rb:11: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/models/user.rb:18: syntax error, unexpected ',', expecting `end'
+app/models/user.rb:11: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/models/user.rb:18: syntax error, unexpected ',', expecting `end'
+app/controllers/application_controller.rb:20:in `current_user'
+app/controllers/application_controller.rb:24:in `authorize'
+Started GET "/stocks/1" for 127.0.0.1 at 2023-02-15 10:39:50 -0500
+Processing by StocksController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (Allocations: 140)
+
+
+  
+SyntaxError (/Users/jamesp/Developer/flatiron-school/phase-4/final-project/she-backend/app/models/user.rb:11: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+    validates :balance, numericality: { grea...
+              ^
+/Users/jamesp/Developer/flatiron-school/phase-4/final-project/she-backend/app/models/user.rb:18: syntax error, unexpected ',', expecting `end'
+      balance == 10,000
+                   ^
+):
+  
+app/models/user.rb:11: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/models/user.rb:18: syntax error, unexpected ',', expecting `end'
+app/models/user.rb:11: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/models/user.rb:18: syntax error, unexpected ',', expecting `end'
+app/controllers/application_controller.rb:20:in `current_user'
+app/controllers/application_controller.rb:24:in `authorize'
+Started GET "/stocks/1" for 127.0.0.1 at 2023-02-15 10:39:55 -0500
+Processing by StocksController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (Allocations: 151)
+
+
+  
+SyntaxError (/Users/jamesp/Developer/flatiron-school/phase-4/final-project/she-backend/app/models/user.rb:13: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+    validate :set_default_balance, on: :cre...
+             ^
+/Users/jamesp/Developer/flatiron-school/phase-4/final-project/she-backend/app/models/user.rb:18: syntax error, unexpected ',', expecting `end'
+      balance == 10,000
+                   ^
+):
+  
+app/models/user.rb:13: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/models/user.rb:18: syntax error, unexpected ',', expecting `end'
+app/models/user.rb:13: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/models/user.rb:18: syntax error, unexpected ',', expecting `end'
+app/controllers/application_controller.rb:20:in `current_user'
+app/controllers/application_controller.rb:24:in `authorize'
+Started GET "/stocks/1" for 127.0.0.1 at 2023-02-15 10:39:56 -0500
+Processing by StocksController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (Allocations: 137)
+
+
+  
+SyntaxError (/Users/jamesp/Developer/flatiron-school/phase-4/final-project/she-backend/app/models/user.rb:13: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+    validate :set_default_balance, on: :cre...
+             ^
+/Users/jamesp/Developer/flatiron-school/phase-4/final-project/she-backend/app/models/user.rb:18: syntax error, unexpected ',', expecting `end'
+      balance == 10,000
+                   ^
+):
+  
+app/models/user.rb:13: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/models/user.rb:18: syntax error, unexpected ',', expecting `end'
+app/models/user.rb:13: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/models/user.rb:18: syntax error, unexpected ',', expecting `end'
+app/controllers/application_controller.rb:20:in `current_user'
+app/controllers/application_controller.rb:24:in `authorize'
+Started GET "/stocks/1" for 127.0.0.1 at 2023-02-15 10:40:01 -0500
+Processing by StocksController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 0ms (Allocations: 150)
+
+
+  
+SyntaxError (/Users/jamesp/Developer/flatiron-school/phase-4/final-project/she-backend/app/models/user.rb:29: syntax error, unexpected `end'):
+  
+app/models/user.rb:29: syntax error, unexpected `end'
+app/models/user.rb:29: syntax error, unexpected `end'
+app/controllers/application_controller.rb:20:in `current_user'
+app/controllers/application_controller.rb:24:in `authorize'
+Started GET "/stocks/1" for 127.0.0.1 at 2023-02-15 10:40:02 -0500
+Processing by StocksController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (Allocations: 136)
+
+
+  
+SyntaxError (/Users/jamesp/Developer/flatiron-school/phase-4/final-project/she-backend/app/models/user.rb:29: syntax error, unexpected `end'):
+  
+app/models/user.rb:29: syntax error, unexpected `end'
+app/models/user.rb:29: syntax error, unexpected `end'
+app/controllers/application_controller.rb:20:in `current_user'
+app/controllers/application_controller.rb:24:in `authorize'
+Started GET "/stocks/1" for 127.0.0.1 at 2023-02-15 10:40:31 -0500
+Processing by StocksController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (Allocations: 149)
+
+
+  
+SyntaxError (/Users/jamesp/Developer/flatiron-school/phase-4/final-project/she-backend/app/models/user.rb:28: syntax error, unexpected `end'):
+  
+app/models/user.rb:28: syntax error, unexpected `end'
+app/models/user.rb:28: syntax error, unexpected `end'
+app/controllers/application_controller.rb:20:in `current_user'
+app/controllers/application_controller.rb:24:in `authorize'
+Started GET "/stocks/1" for 127.0.0.1 at 2023-02-15 10:40:32 -0500
+Processing by StocksController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 2ms (Allocations: 135)
+
+
+  
+SyntaxError (/Users/jamesp/Developer/flatiron-school/phase-4/final-project/she-backend/app/models/user.rb:28: syntax error, unexpected `end'):
+  
+app/models/user.rb:28: syntax error, unexpected `end'
+app/models/user.rb:28: syntax error, unexpected `end'
+app/controllers/application_controller.rb:20:in `current_user'
+app/controllers/application_controller.rb:24:in `authorize'
+Started GET "/stocks/1" for 127.0.0.1 at 2023-02-15 10:40:32 -0500
+Processing by StocksController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (Allocations: 135)
+
+
+  
+SyntaxError (/Users/jamesp/Developer/flatiron-school/phase-4/final-project/she-backend/app/models/user.rb:28: syntax error, unexpected `end'):
+  
+app/models/user.rb:28: syntax error, unexpected `end'
+app/models/user.rb:28: syntax error, unexpected `end'
+app/controllers/application_controller.rb:20:in `current_user'
+app/controllers/application_controller.rb:24:in `authorize'
+Started GET "/stocks/1" for 127.0.0.1 at 2023-02-15 10:40:33 -0500
+Processing by StocksController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (Allocations: 135)
+
+
+  
+SyntaxError (/Users/jamesp/Developer/flatiron-school/phase-4/final-project/she-backend/app/models/user.rb:28: syntax error, unexpected `end'):
+  
+app/models/user.rb:28: syntax error, unexpected `end'
+app/models/user.rb:28: syntax error, unexpected `end'
+app/controllers/application_controller.rb:20:in `current_user'
+app/controllers/application_controller.rb:24:in `authorize'
+Started GET "/stocks/1" for 127.0.0.1 at 2023-02-15 10:40:33 -0500
+Processing by StocksController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (Allocations: 135)
+
+
+  
+SyntaxError (/Users/jamesp/Developer/flatiron-school/phase-4/final-project/she-backend/app/models/user.rb:28: syntax error, unexpected `end'):
+  
+app/models/user.rb:28: syntax error, unexpected `end'
+app/models/user.rb:28: syntax error, unexpected `end'
+app/controllers/application_controller.rb:20:in `current_user'
+app/controllers/application_controller.rb:24:in `authorize'
+Started GET "/stocks/1" for 127.0.0.1 at 2023-02-15 10:40:33 -0500
+Processing by StocksController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (Allocations: 135)
+
+
+  
+SyntaxError (/Users/jamesp/Developer/flatiron-school/phase-4/final-project/she-backend/app/models/user.rb:28: syntax error, unexpected `end'):
+  
+app/models/user.rb:28: syntax error, unexpected `end'
+app/models/user.rb:28: syntax error, unexpected `end'
+app/controllers/application_controller.rb:20:in `current_user'
+app/controllers/application_controller.rb:24:in `authorize'
+Started GET "/stocks/1" for 127.0.0.1 at 2023-02-15 10:40:33 -0500
+Processing by StocksController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 0ms (Allocations: 135)
+
+
+  
+SyntaxError (/Users/jamesp/Developer/flatiron-school/phase-4/final-project/she-backend/app/models/user.rb:28: syntax error, unexpected `end'):
+  
+app/models/user.rb:28: syntax error, unexpected `end'
+app/models/user.rb:28: syntax error, unexpected `end'
+app/controllers/application_controller.rb:20:in `current_user'
+app/controllers/application_controller.rb:24:in `authorize'
+Started GET "/stocks/1" for 127.0.0.1 at 2023-02-15 10:40:33 -0500
+Processing by StocksController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (Allocations: 135)
+
+
+  
+SyntaxError (/Users/jamesp/Developer/flatiron-school/phase-4/final-project/she-backend/app/models/user.rb:28: syntax error, unexpected `end'):
+  
+app/models/user.rb:28: syntax error, unexpected `end'
+app/models/user.rb:28: syntax error, unexpected `end'
+app/controllers/application_controller.rb:20:in `current_user'
+app/controllers/application_controller.rb:24:in `authorize'
+Started GET "/stocks/1" for 127.0.0.1 at 2023-02-15 10:40:34 -0500
+Processing by StocksController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (Allocations: 135)
+
+
+  
+SyntaxError (/Users/jamesp/Developer/flatiron-school/phase-4/final-project/she-backend/app/models/user.rb:28: syntax error, unexpected `end'):
+  
+app/models/user.rb:28: syntax error, unexpected `end'
+app/models/user.rb:28: syntax error, unexpected `end'
+app/controllers/application_controller.rb:20:in `current_user'
+app/controllers/application_controller.rb:24:in `authorize'
+Started GET "/stocks/1" for 127.0.0.1 at 2023-02-15 10:40:46 -0500
+Processing by StocksController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (Allocations: 131)
+
+
+  
+SyntaxError (/Users/jamesp/Developer/flatiron-school/phase-4/final-project/she-backend/app/models/user.rb:10: syntax error, unexpected `end'):
+  
+app/models/user.rb:10: syntax error, unexpected `end'
+app/models/user.rb:10: syntax error, unexpected `end'
+app/controllers/application_controller.rb:20:in `current_user'
+app/controllers/application_controller.rb:24:in `authorize'
+Started GET "/stocks/1" for 127.0.0.1 at 2023-02-15 10:40:47 -0500
+Processing by StocksController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (Allocations: 117)
+
+
+  
+SyntaxError (/Users/jamesp/Developer/flatiron-school/phase-4/final-project/she-backend/app/models/user.rb:10: syntax error, unexpected `end'):
+  
+app/models/user.rb:10: syntax error, unexpected `end'
+app/models/user.rb:10: syntax error, unexpected `end'
+app/controllers/application_controller.rb:20:in `current_user'
+app/controllers/application_controller.rb:24:in `authorize'
+Started GET "/stocks/1" for 127.0.0.1 at 2023-02-15 10:40:47 -0500
+Processing by StocksController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 2ms (Allocations: 117)
+
+
+  
+SyntaxError (/Users/jamesp/Developer/flatiron-school/phase-4/final-project/she-backend/app/models/user.rb:10: syntax error, unexpected `end'):
+  
+app/models/user.rb:10: syntax error, unexpected `end'
+app/models/user.rb:10: syntax error, unexpected `end'
+app/controllers/application_controller.rb:20:in `current_user'
+app/controllers/application_controller.rb:24:in `authorize'
+Started GET "/stocks/1" for 127.0.0.1 at 2023-02-15 10:40:47 -0500
+Processing by StocksController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (Allocations: 117)
+
+
+  
+SyntaxError (/Users/jamesp/Developer/flatiron-school/phase-4/final-project/she-backend/app/models/user.rb:10: syntax error, unexpected `end'):
+  
+app/models/user.rb:10: syntax error, unexpected `end'
+app/models/user.rb:10: syntax error, unexpected `end'
+app/controllers/application_controller.rb:20:in `current_user'
+app/controllers/application_controller.rb:24:in `authorize'
+Started GET "/stocks/1" for 127.0.0.1 at 2023-02-15 10:40:48 -0500
+Processing by StocksController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (Allocations: 117)
+
+
+  
+SyntaxError (/Users/jamesp/Developer/flatiron-school/phase-4/final-project/she-backend/app/models/user.rb:10: syntax error, unexpected `end'):
+  
+app/models/user.rb:10: syntax error, unexpected `end'
+app/models/user.rb:10: syntax error, unexpected `end'
+app/controllers/application_controller.rb:20:in `current_user'
+app/controllers/application_controller.rb:24:in `authorize'
+Started GET "/stocks/1" for 127.0.0.1 at 2023-02-15 10:40:55 -0500
+Processing by StocksController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (Allocations: 131)
+
+
+  
+SyntaxError (/Users/jamesp/Developer/flatiron-school/phase-4/final-project/she-backend/app/models/user.rb:10: syntax error, unexpected `end'):
+  
+app/models/user.rb:10: syntax error, unexpected `end'
+app/models/user.rb:10: syntax error, unexpected `end'
+app/controllers/application_controller.rb:20:in `current_user'
+app/controllers/application_controller.rb:24:in `authorize'
+Started GET "/stocks/1" for 127.0.0.1 at 2023-02-15 10:40:55 -0500
+Processing by StocksController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 2ms (Allocations: 117)
+
+
+  
+SyntaxError (/Users/jamesp/Developer/flatiron-school/phase-4/final-project/she-backend/app/models/user.rb:10: syntax error, unexpected `end'):
+  
+app/models/user.rb:10: syntax error, unexpected `end'
+app/models/user.rb:10: syntax error, unexpected `end'
+app/controllers/application_controller.rb:20:in `current_user'
+app/controllers/application_controller.rb:24:in `authorize'
+Started GET "/stocks/1" for 127.0.0.1 at 2023-02-15 10:40:56 -0500
+Processing by StocksController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (Allocations: 117)
+
+
+  
+SyntaxError (/Users/jamesp/Developer/flatiron-school/phase-4/final-project/she-backend/app/models/user.rb:10: syntax error, unexpected `end'):
+  
+app/models/user.rb:10: syntax error, unexpected `end'
+app/models/user.rb:10: syntax error, unexpected `end'
+app/controllers/application_controller.rb:20:in `current_user'
+app/controllers/application_controller.rb:24:in `authorize'
+Started GET "/stocks/1" for 127.0.0.1 at 2023-02-15 10:40:56 -0500
+Processing by StocksController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (Allocations: 117)
+
+
+  
+SyntaxError (/Users/jamesp/Developer/flatiron-school/phase-4/final-project/she-backend/app/models/user.rb:10: syntax error, unexpected `end'):
+  
+app/models/user.rb:10: syntax error, unexpected `end'
+app/models/user.rb:10: syntax error, unexpected `end'
+app/controllers/application_controller.rb:20:in `current_user'
+app/controllers/application_controller.rb:24:in `authorize'
+Started GET "/stocks/1" for 127.0.0.1 at 2023-02-15 10:40:56 -0500
+Processing by StocksController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 0ms (Allocations: 117)
+
+
+  
+SyntaxError (/Users/jamesp/Developer/flatiron-school/phase-4/final-project/she-backend/app/models/user.rb:10: syntax error, unexpected `end'):
+  
+app/models/user.rb:10: syntax error, unexpected `end'
+app/models/user.rb:10: syntax error, unexpected `end'
+app/controllers/application_controller.rb:20:in `current_user'
+app/controllers/application_controller.rb:24:in `authorize'
+Started GET "/stocks/1" for 127.0.0.1 at 2023-02-15 10:40:56 -0500
+Processing by StocksController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 0ms (Allocations: 117)
+
+
+  
+SyntaxError (/Users/jamesp/Developer/flatiron-school/phase-4/final-project/she-backend/app/models/user.rb:10: syntax error, unexpected `end'):
+  
+app/models/user.rb:10: syntax error, unexpected `end'
+app/models/user.rb:10: syntax error, unexpected `end'
+app/controllers/application_controller.rb:20:in `current_user'
+app/controllers/application_controller.rb:24:in `authorize'
+Started GET "/stocks/1" for 127.0.0.1 at 2023-02-15 10:40:57 -0500
+Processing by StocksController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (Allocations: 117)
+
+
+  
+SyntaxError (/Users/jamesp/Developer/flatiron-school/phase-4/final-project/she-backend/app/models/user.rb:10: syntax error, unexpected `end'):
+  
+app/models/user.rb:10: syntax error, unexpected `end'
+app/models/user.rb:10: syntax error, unexpected `end'
+app/controllers/application_controller.rb:20:in `current_user'
+app/controllers/application_controller.rb:24:in `authorize'
+Started GET "/stocks/1" for 127.0.0.1 at 2023-02-15 10:40:57 -0500
+Processing by StocksController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 0ms (Allocations: 117)
+
+
+  
+SyntaxError (/Users/jamesp/Developer/flatiron-school/phase-4/final-project/she-backend/app/models/user.rb:10: syntax error, unexpected `end'):
+  
+app/models/user.rb:10: syntax error, unexpected `end'
+app/models/user.rb:10: syntax error, unexpected `end'
+app/controllers/application_controller.rb:20:in `current_user'
+app/controllers/application_controller.rb:24:in `authorize'
+Started GET "/stocks/1" for 127.0.0.1 at 2023-02-15 10:40:57 -0500
+Processing by StocksController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 0ms (Allocations: 117)
+
+
+  
+SyntaxError (/Users/jamesp/Developer/flatiron-school/phase-4/final-project/she-backend/app/models/user.rb:10: syntax error, unexpected `end'):
+  
+app/models/user.rb:10: syntax error, unexpected `end'
+app/models/user.rb:10: syntax error, unexpected `end'
+app/controllers/application_controller.rb:20:in `current_user'
+app/controllers/application_controller.rb:24:in `authorize'
+Started GET "/stocks/1" for 127.0.0.1 at 2023-02-15 10:40:57 -0500
+Processing by StocksController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (Allocations: 117)
+
+
+  
+SyntaxError (/Users/jamesp/Developer/flatiron-school/phase-4/final-project/she-backend/app/models/user.rb:10: syntax error, unexpected `end'):
+  
+app/models/user.rb:10: syntax error, unexpected `end'
+app/models/user.rb:10: syntax error, unexpected `end'
+app/controllers/application_controller.rb:20:in `current_user'
+app/controllers/application_controller.rb:24:in `authorize'
+Started GET "/stocks/1" for 127.0.0.1 at 2023-02-15 10:40:57 -0500
+Processing by StocksController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 0ms (Allocations: 117)
+
+
+  
+SyntaxError (/Users/jamesp/Developer/flatiron-school/phase-4/final-project/she-backend/app/models/user.rb:10: syntax error, unexpected `end'):
+  
+app/models/user.rb:10: syntax error, unexpected `end'
+app/models/user.rb:10: syntax error, unexpected `end'
+app/controllers/application_controller.rb:20:in `current_user'
+app/controllers/application_controller.rb:24:in `authorize'
+Started GET "/stocks/1" for 127.0.0.1 at 2023-02-15 10:41:06 -0500
+Processing by StocksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:20:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:20:in `current_user'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 17ms (Views: 4.3ms | ActiveRecord: 0.6ms | Allocations: 4728)
+
+
+Started GET "/stocks/1" for 127.0.0.1 at 2023-02-15 10:41:07 -0500
+Processing by StocksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:20:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:20:in `current_user'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 4ms (Views: 1.9ms | ActiveRecord: 0.2ms | Allocations: 1301)
+
+
+Started GET "/stocks/1" for 127.0.0.1 at 2023-02-15 10:41:07 -0500
+Processing by StocksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:20:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:20:in `current_user'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.14ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 5ms (Views: 2.4ms | ActiveRecord: 0.2ms | Allocations: 1301)
+
+
+Started GET "/stocks/1" for 127.0.0.1 at 2023-02-15 10:41:08 -0500
+Processing by StocksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:20:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:20:in `current_user'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.1ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 6ms (Views: 2.2ms | ActiveRecord: 0.3ms | Allocations: 1289)
+
+
+Started GET "/stocks/1" for 127.0.0.1 at 2023-02-15 10:41:15 -0500
+Processing by StocksController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (Allocations: 168)
+
+
+  
+SyntaxError (/Users/jamesp/Developer/flatiron-school/phase-4/final-project/she-backend/app/models/user.rb:18: syntax error, unexpected ',', expecting `end'
+      balance == 10,000
+                   ^
+):
+  
+app/models/user.rb:18: syntax error, unexpected ',', expecting `end'
+app/models/user.rb:18: syntax error, unexpected ',', expecting `end'
+app/controllers/application_controller.rb:20:in `current_user'
+app/controllers/application_controller.rb:24:in `authorize'
+Started GET "/stocks/1" for 127.0.0.1 at 2023-02-15 10:41:16 -0500
+Processing by StocksController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (Allocations: 155)
+
+
+  
+SyntaxError (/Users/jamesp/Developer/flatiron-school/phase-4/final-project/she-backend/app/models/user.rb:18: syntax error, unexpected ',', expecting `end'
+      balance == 10,000
+                   ^
+):
+  
+app/models/user.rb:18: syntax error, unexpected ',', expecting `end'
+app/models/user.rb:18: syntax error, unexpected ',', expecting `end'
+app/controllers/application_controller.rb:20:in `current_user'
+app/controllers/application_controller.rb:24:in `authorize'
+Started GET "/stocks/1" for 127.0.0.1 at 2023-02-15 10:41:16 -0500
+Processing by StocksController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (Allocations: 155)
+
+
+  
+SyntaxError (/Users/jamesp/Developer/flatiron-school/phase-4/final-project/she-backend/app/models/user.rb:18: syntax error, unexpected ',', expecting `end'
+      balance == 10,000
+                   ^
+):
+  
+app/models/user.rb:18: syntax error, unexpected ',', expecting `end'
+app/models/user.rb:18: syntax error, unexpected ',', expecting `end'
+app/controllers/application_controller.rb:20:in `current_user'
+app/controllers/application_controller.rb:24:in `authorize'
+Started GET "/stocks/1" for 127.0.0.1 at 2023-02-15 10:41:17 -0500
+Processing by StocksController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 2ms (Allocations: 155)
+
+
+  
+SyntaxError (/Users/jamesp/Developer/flatiron-school/phase-4/final-project/she-backend/app/models/user.rb:18: syntax error, unexpected ',', expecting `end'
+      balance == 10,000
+                   ^
+):
+  
+app/models/user.rb:18: syntax error, unexpected ',', expecting `end'
+app/models/user.rb:18: syntax error, unexpected ',', expecting `end'
+app/controllers/application_controller.rb:20:in `current_user'
+app/controllers/application_controller.rb:24:in `authorize'
+Started GET "/stocks/1" for 127.0.0.1 at 2023-02-15 10:41:17 -0500
+Processing by StocksController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms (Allocations: 155)
+
+
+  
+SyntaxError (/Users/jamesp/Developer/flatiron-school/phase-4/final-project/she-backend/app/models/user.rb:18: syntax error, unexpected ',', expecting `end'
+      balance == 10,000
+                   ^
+):
+  
+app/models/user.rb:18: syntax error, unexpected ',', expecting `end'
+app/models/user.rb:18: syntax error, unexpected ',', expecting `end'
+app/controllers/application_controller.rb:20:in `current_user'
+app/controllers/application_controller.rb:24:in `authorize'
+Started GET "/stocks/1" for 127.0.0.1 at 2023-02-15 10:41:21 -0500
+Processing by StocksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:20:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:20:in `current_user'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Filter chain halted as :authorize rendered or redirected
+Completed 401 Unauthorized in 8ms (Views: 1.5ms | ActiveRecord: 0.7ms | Allocations: 3292)
+
+
+Started POST "/signup" for 127.0.0.1 at 2023-02-15 10:42:41 -0500
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"joey", "name"=>"joey123", "password"=>"[FILTERED]"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "joey"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:20:in `current_user'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.03ms)
+Completed 422 Unprocessable Entity in 266ms (Views: 0.6ms | ActiveRecord: 1.4ms | Allocations: 12753)
+
+
+Started POST "/signup" for 127.0.0.1 at 2023-02-15 10:43:04 -0500
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"joey123", "name"=>"joey", "password"=>"[FILTERED]"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "joey123"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:20:in `current_user'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.03ms)
+Completed 422 Unprocessable Entity in 265ms (Views: 0.6ms | ActiveRecord: 0.2ms | Allocations: 3954)
+
+
+Started POST "/signup" for 127.0.0.1 at 2023-02-15 10:43:57 -0500
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"joey123", "name"=>"joey", "password"=>"[FILTERED]"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "joey123"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:20:in `current_user'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.03ms)
+Completed 422 Unprocessable Entity in 255ms (Views: 0.6ms | ActiveRecord: 1.8ms | Allocations: 7037)
+
+
+Started POST "/signup" for 127.0.0.1 at 2023-02-15 10:44:04 -0500
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"joey123", "name"=>"joey", "password_digest"=>"[FILTERED]"}
+[31mUnpermitted parameter: :password_digest. Context: { controller: UsersController, action: create, request: #<ActionDispatch::Request:0x0000000126ef19c0>, params: {"username"=>"joey123", "name"=>"joey", "password_digest"=>"[FILTERED]", "controller"=>"users", "action"=>"create"} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "joey123"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:20:in `current_user'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+Completed 422 Unprocessable Entity in 11ms (Views: 1.3ms | ActiveRecord: 0.4ms | Allocations: 5168)
+
+
+Started POST "/signup" for 127.0.0.1 at 2023-02-15 10:44:36 -0500
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"joey123", "name"=>"joey", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "joey123"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:20:in `current_user'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.03ms)
+Completed 422 Unprocessable Entity in 261ms (Views: 0.5ms | ActiveRecord: 0.3ms | Allocations: 3350)
+
+
+Started POST "/signup" for 127.0.0.1 at 2023-02-15 10:44:56 -0500
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"joey123", "name"=>"joey", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "joey123"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "username", "password_digest", "balance", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "joey"], ["username", "joey123"], ["password_digest", "[FILTERED]"], ["balance", nil], ["created_at", "2023-02-15 15:44:56.652261"], ["updated_at", "2023-02-15 15:44:56.652261"]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:20:in `current_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.12ms)
+Completed 201 Created in 265ms (Views: 11.5ms | ActiveRecord: 2.4ms | Allocations: 8493)
+
+
+Started POST "/signup" for 127.0.0.1 at 2023-02-15 10:46:33 -0500
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"james123", "name"=>"james", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "james123"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Create (1.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "username", "password_digest", "balance", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "james"], ["username", "james123"], ["password_digest", "[FILTERED]"], ["balance", nil], ["created_at", "2023-02-15 15:46:33.418623"], ["updated_at", "2023-02-15 15:46:33.418623"]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:20:in `current_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.1ms)
+Completed 201 Created in 254ms (Views: 1.3ms | ActiveRecord: 2.6ms | Allocations: 7267)
+
+
+Started POST "/signup" for 127.0.0.1 at 2023-02-15 10:50:00 -0500
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"kevin123", "name"=>"kevin", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "kevin123"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:20:in `current_user'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.06ms)
+Completed 422 Unprocessable Entity in 256ms (Views: 0.7ms | ActiveRecord: 0.7ms | Allocations: 7198)
+
+
+Started POST "/signup" for 127.0.0.1 at 2023-02-15 10:52:15 -0500
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"kevin123", "name"=>"kevin", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "kevin123"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:20:in `current_user'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.03ms)
+Completed 422 Unprocessable Entity in 252ms (Views: 0.7ms | ActiveRecord: 0.6ms | Allocations: 7202)
+
+
+Started POST "/signup" for 127.0.0.1 at 2023-02-15 10:53:29 -0500
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"kevin123", "name"=>"kevin", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "kevin123"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:20:in `current_user'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.03ms)
+Completed 422 Unprocessable Entity in 253ms (Views: 1.0ms | ActiveRecord: 1.0ms | Allocations: 7161)
+
+
+Started POST "/signup" for 127.0.0.1 at 2023-02-15 10:54:55 -0500
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"kevin123", "name"=>"kevin", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "kevin123"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:20:in `current_user'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.03ms)
+Completed 422 Unprocessable Entity in 250ms (Views: 0.8ms | ActiveRecord: 0.9ms | Allocations: 7156)
+
+
+Started POST "/signup" for 127.0.0.1 at 2023-02-15 10:55:42 -0500
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"kevin123", "name"=>"kevin", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "kevin123"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:20:in `current_user'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.05ms)
+Completed 422 Unprocessable Entity in 252ms (Views: 1.1ms | ActiveRecord: 0.6ms | Allocations: 7201)
+
+
+Started POST "/signup" for 127.0.0.1 at 2023-02-15 10:56:37 -0500
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"kevin123", "name"=>"kevin", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "kevin123"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "username", "password_digest", "balance", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "kevin"], ["username", "kevin123"], ["password_digest", "[FILTERED]"], ["balance", nil], ["created_at", "2023-02-15 15:56:37.781649"], ["updated_at", "2023-02-15 15:56:37.781649"]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:20:in `current_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.09ms)
+Completed 201 Created in 253ms (Views: 1.8ms | ActiveRecord: 1.8ms | Allocations: 7266)
+
+
+Started GET "/users" for 127.0.0.1 at 2023-02-15 10:56:46 -0500
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for UsersController):
+  
+actionpack (7.0.4.2) lib/abstract_controller/base.rb:146:in `process'
+actionpack (7.0.4.2) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.4.2) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.4.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.4.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.4.2) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.4.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.4.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.4.2) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.6.2) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.6.2) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+rack (2.2.6.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.6.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.6.2) lib/rack/head.rb:12:in `call'
+activerecord (7.0.4.2) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.2) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (1.0ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 1]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.7ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 3]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.8ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 2]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+Started POST "/signup" for 127.0.0.1 at 2023-02-15 11:00:39 -0500
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"kevin123", "name"=>"kevin", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "kevin123"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "username", "password_digest", "balance", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "kevin"], ["username", "kevin123"], ["password_digest", "[FILTERED]"], ["balance", nil], ["created_at", "2023-02-15 16:00:39.489525"], ["updated_at", "2023-02-15 16:00:39.489525"]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:20:in `current_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.13ms)
+Completed 201 Created in 251ms (Views: 1.4ms | ActiveRecord: 2.3ms | Allocations: 7332)
+
+
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 4]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "stocks"[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "stocks" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "symbol" varchar, "price" float, "volume" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "user_stocks"[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "user_stocks" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "quantity" integer, "user_id" integer NOT NULL, "stock_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE INDEX "index_user_stocks_on_stock_id" ON "user_stocks" ("stock_id")[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE INDEX "index_user_stocks_on_user_id" ON "user_stocks" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "users"[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "username" varchar, "password_digest" varchar, "balance" float, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE TEMPORARY TABLE "auser_stocks" ("id" integer NOT NULL PRIMARY KEY, "quantity" integer DEFAULT NULL, "user_id" integer NOT NULL, "stock_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_auser_stocks_on_user_id" ON "auser_stocks" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_auser_stocks_on_stock_id" ON "auser_stocks" ("stock_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "auser_stocks" ("id","quantity","user_id","stock_id","created_at","updated_at")
+                     SELECT "id","quantity","user_id","stock_id","created_at","updated_at" FROM "user_stocks"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "user_stocks"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "user_stocks" ("id" integer NOT NULL PRIMARY KEY, "quantity" integer DEFAULT NULL, "user_id" integer NOT NULL, "stock_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_62699afff5"
+FOREIGN KEY ("stock_id")
+  REFERENCES "stocks" ("id")
+)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_user_stocks_on_stock_id" ON "user_stocks" ("stock_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_user_stocks_on_user_id" ON "user_stocks" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "user_stocks" ("id","quantity","user_id","stock_id","created_at","updated_at")
+                     SELECT "id","quantity","user_id","stock_id","created_at","updated_at" FROM "auser_stocks"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE "auser_stocks"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "auser_stocks" ("id" integer NOT NULL PRIMARY KEY, "quantity" integer DEFAULT NULL, "user_id" integer NOT NULL, "stock_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_auser_stocks_on_user_id" ON "auser_stocks" ("user_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_auser_stocks_on_stock_id" ON "auser_stocks" ("stock_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "auser_stocks" ("id","quantity","user_id","stock_id","created_at","updated_at")
+                     SELECT "id","quantity","user_id","stock_id","created_at","updated_at" FROM "user_stocks"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "user_stocks"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE TABLE "user_stocks" ("id" integer NOT NULL PRIMARY KEY, "quantity" integer DEFAULT NULL, "user_id" integer NOT NULL, "stock_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_62699afff5"
+FOREIGN KEY ("stock_id")
+  REFERENCES "stocks" ("id")
+, CONSTRAINT "fk_rails_15a036aef2"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_user_stocks_on_stock_id" ON "user_stocks" ("stock_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_user_stocks_on_user_id" ON "user_stocks" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "user_stocks" ("id","quantity","user_id","stock_id","created_at","updated_at")
+                     SELECT "id","quantity","user_id","stock_id","created_at","updated_at" FROM "auser_stocks"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE "auser_stocks"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20230213193548)[0m
+  [1m[35m (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20230213193236),
+(20230213193500);
+
+[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-02-15 16:01:36.633705"], ["updated_at", "2023-02-15 16:01:36.633705"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "ba41cb083b0ce633698bbeddaa5d62552ead730a"], ["created_at", "2023-02-15 16:01:36.636515"], ["updated_at", "2023-02-15 16:01:36.636515"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "stocks"[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "stocks" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "symbol" varchar, "price" float, "volume" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "user_stocks"[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "user_stocks" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "quantity" integer, "user_id" integer NOT NULL, "stock_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE INDEX "index_user_stocks_on_stock_id" ON "user_stocks" ("stock_id")[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE INDEX "index_user_stocks_on_user_id" ON "user_stocks" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "users"[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "username" varchar, "password_digest" varchar, "balance" float, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE TEMPORARY TABLE "auser_stocks" ("id" integer NOT NULL PRIMARY KEY, "quantity" integer DEFAULT NULL, "user_id" integer NOT NULL, "stock_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_auser_stocks_on_user_id" ON "auser_stocks" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_auser_stocks_on_stock_id" ON "auser_stocks" ("stock_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "auser_stocks" ("id","quantity","user_id","stock_id","created_at","updated_at")
+                     SELECT "id","quantity","user_id","stock_id","created_at","updated_at" FROM "user_stocks"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "user_stocks"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "user_stocks" ("id" integer NOT NULL PRIMARY KEY, "quantity" integer DEFAULT NULL, "user_id" integer NOT NULL, "stock_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_62699afff5"
+FOREIGN KEY ("stock_id")
+  REFERENCES "stocks" ("id")
+)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_user_stocks_on_stock_id" ON "user_stocks" ("stock_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_user_stocks_on_user_id" ON "user_stocks" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "user_stocks" ("id","quantity","user_id","stock_id","created_at","updated_at")
+                     SELECT "id","quantity","user_id","stock_id","created_at","updated_at" FROM "auser_stocks"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE "auser_stocks"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "auser_stocks" ("id" integer NOT NULL PRIMARY KEY, "quantity" integer DEFAULT NULL, "user_id" integer NOT NULL, "stock_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_auser_stocks_on_user_id" ON "auser_stocks" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_auser_stocks_on_stock_id" ON "auser_stocks" ("stock_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "auser_stocks" ("id","quantity","user_id","stock_id","created_at","updated_at")
+                     SELECT "id","quantity","user_id","stock_id","created_at","updated_at" FROM "user_stocks"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "user_stocks"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE TABLE "user_stocks" ("id" integer NOT NULL PRIMARY KEY, "quantity" integer DEFAULT NULL, "user_id" integer NOT NULL, "stock_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_62699afff5"
+FOREIGN KEY ("stock_id")
+  REFERENCES "stocks" ("id")
+, CONSTRAINT "fk_rails_15a036aef2"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_user_stocks_on_stock_id" ON "user_stocks" ("stock_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_user_stocks_on_user_id" ON "user_stocks" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "user_stocks" ("id","quantity","user_id","stock_id","created_at","updated_at")
+                     SELECT "id","quantity","user_id","stock_id","created_at","updated_at" FROM "auser_stocks"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE "auser_stocks"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20230213193548)[0m
+  [1m[35m (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20230213193236),
+(20230213193500);
+
+[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-02-15 16:01:36.660160"], ["updated_at", "2023-02-15 16:01:36.660160"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.1ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = ?, "updated_at" = ? WHERE "ar_internal_metadata"."key" = ?[0m  [["value", "test"], ["updated_at", "2023-02-15 16:01:36.661817"], ["key", "environment"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "ba41cb083b0ce633698bbeddaa5d62552ead730a"], ["created_at", "2023-02-15 16:01:36.663492"], ["updated_at", "2023-02-15 16:01:36.663492"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/signup" for 127.0.0.1 at 2023-02-15 11:01:44 -0500
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"kevin123", "name"=>"kevin", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "kevin123"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "username", "password_digest", "balance", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "kevin"], ["username", "kevin123"], ["password_digest", "[FILTERED]"], ["balance", nil], ["created_at", "2023-02-15 16:01:44.451121"], ["updated_at", "2023-02-15 16:01:44.451121"]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:20:in `current_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.1ms)
+Completed 201 Created in 255ms (Views: 1.4ms | ActiveRecord: 2.0ms | Allocations: 7253)
+
+
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20230213193236)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "username" varchar, "password_digest" varchar, "balance" float DEFAULT 10000.0, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230213193236"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateStocks (20230213193500)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "stocks" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "symbol" varchar, "price" float, "volume" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230213193500"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateUserStocks (20230213193548)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "user_stocks" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "quantity" integer, "user_id" integer NOT NULL, "stock_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_15a036aef2"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+, CONSTRAINT "fk_rails_62699afff5"
+FOREIGN KEY ("stock_id")
+  REFERENCES "stocks" ("id")
+)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_user_stocks_on_user_id" ON "user_stocks" ("user_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_user_stocks_on_stock_id" ON "user_stocks" ("stock_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230213193548"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-02-15 16:03:18.246269"], ["updated_at", "2023-02-15 16:03:18.246269"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/signup" for 127.0.0.1 at 2023-02-15 11:03:22 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"kevin123", "name"=>"kevin", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "kevin123"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "username", "password_digest", "balance", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "kevin"], ["username", "kevin123"], ["password_digest", "[FILTERED]"], ["balance", 10000.0], ["created_at", "2023-02-15 16:03:23.240569"], ["updated_at", "2023-02-15 16:03:23.240569"]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:20:in `current_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.13ms)
+Completed 201 Created in 253ms (Views: 1.3ms | ActiveRecord: 1.7ms | Allocations: 7177)
+
+
+Started POST "/signup" for 127.0.0.1 at 2023-02-15 11:04:44 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"joey123", "name"=>"joey", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "joey123"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "username", "password_digest", "balance", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "joey"], ["username", "joey123"], ["password_digest", "[FILTERED]"], ["balance", 10000.0], ["created_at", "2023-02-15 16:04:45.248319"], ["updated_at", "2023-02-15 16:04:45.248319"]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:20:in `current_user'
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.1ms)
+Completed 201 Created in 255ms (Views: 1.2ms | ActiveRecord: 2.2ms | Allocations: 7199)
+
+
