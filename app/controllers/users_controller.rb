@@ -1,7 +1,13 @@
 class UsersController < ApplicationController
 
     # no auth needed to create a new user
-    skip_before_action :authorize, only: [:create, :show]
+    skip_before_action :authorize, only: [:create, :show, :index]
+
+
+    def index
+        users = User.all
+        render json: users
+    end
 
     # Sign Up Feature
     def create
@@ -37,9 +43,4 @@ class UsersController < ApplicationController
     def user_params
         params.permit(:name, :username, :password, :password_confirmation)
     end
-
-    def find_user
-        user = User.find(params[:id])
-    end
-
 end
