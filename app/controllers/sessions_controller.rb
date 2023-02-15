@@ -4,15 +4,15 @@ class SessionsController < ApplicationController
   
   # Login feature
   def create
-    user = User.find_by(username: params[:username])
-    # checks to see if username and pass are authenticated
+    user = User.find_by(email: params[:email])
+    # checks to see if email and pass are authenticated
     if user&.authenticate(params[:password])
       # sabes the user's ID in the session hash
       session[:user_id] = user.id
       render json: user, status: :created
     else
       # if not authenticated, return an error message
-      render json: { errors: ["Invalid username or password"] }, status: :unauthorized
+      render json: { errors: ["Invalid email or password"] }, status: :unauthorized
     end
   end
 
