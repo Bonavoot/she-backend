@@ -10,12 +10,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_02_13_193548) do
+ActiveRecord::Schema[7.0].define(version: 4) do
   create_table "stocks", force: :cascade do |t|
-    t.string "name"
     t.string "symbol"
-    t.float "price"
-    t.string "volume"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -34,11 +31,23 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_13_193548) do
     t.string "name"
     t.string "username"
     t.string "password_digest"
-    t.float "balance", default: 10000.0
+    t.float "total_balance", default: 10000.0
+    t.float "buying_power", default: 10000.0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
+  create_table "watchlist_records", force: :cascade do |t|
+    t.integer "user_id", null: false
+    t.integer "stock_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["stock_id"], name: "index_watchlist_records_on_stock_id"
+    t.index ["user_id"], name: "index_watchlist_records_on_user_id"
+  end
+
   add_foreign_key "user_stocks", "stocks"
   add_foreign_key "user_stocks", "users"
+  add_foreign_key "watchlist_records", "stocks"
+  add_foreign_key "watchlist_records", "users"
 end

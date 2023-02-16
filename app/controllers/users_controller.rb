@@ -3,7 +3,6 @@ class UsersController < ApplicationController
     # no auth needed to create a new user
     skip_before_action :authorize, only: [:create, :show, :index]
 
-
     def index
         users = User.all
         render json: users
@@ -29,12 +28,12 @@ class UsersController < ApplicationController
     end
     
     def update
-        find_user.update!(user_params)
-        render json: find_user, status: :accepted
+        current_user.update!(user_params)
+        render json: @current_user, status: :accepted
     end
 
     def destroy 
-        find_user.destroy
+       current_user.destroy
         head :no_content 
     end
 
