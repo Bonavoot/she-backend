@@ -21,7 +21,7 @@ rescue_from ActiveRecord::RecordInvalid, with: :render_unprocessable_entity_resp
     end
   
     def authorize
-        render json: { errors: ["Not authorized"] }, status: :unauthorized unless current_user
+        render json: {errors: ["Not authorized"]}, status: :unauthorized unless current_user
     end
     
 end 

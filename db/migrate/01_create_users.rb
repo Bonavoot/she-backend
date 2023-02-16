@@ -4,7 +4,8 @@ class CreateUsers < ActiveRecord::Migration[7.0]
       t.string :name
       t.string :username
       t.string :password_digest
-      t.float :balance, default: 10000
+      t.float :total_balance, default: 10000.00
+      t.float :buying_power, default: 10000.00
       t.timestamps
     end
   end
