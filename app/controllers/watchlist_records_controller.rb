@@ -2,6 +2,11 @@ class WatchlistRecordsController < ApplicationController
     skip_before_action :authorize, only: [:index, :create, :destroy]
     
 
+    def index
+        watchlist_records = WatchlistRecord.all
+        render json: watchlist_records
+    end
+
     def create
         watchlist_record = WatchlistRecord.create!(watchlist_record_params)
         render json: watchlist_record, status: :created

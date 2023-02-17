@@ -19,10 +19,8 @@ class User < ApplicationRecord
     validates :username, presence: true, uniqueness: true, length: { minimum: 3, maximum: 15 }, format: { with: /\A[a-zA-Z0-9]+\z/, message: "only allows letters and numbers" } 
 
 
-  
-  
     private
-
+  
     def buy_stock
       current_user.balance -= (stock.price * user_stock.quantity)
     end
